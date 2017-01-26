@@ -1,8 +1,8 @@
 class Owner < ActiveRecord::Base
   # TODO: add association ot pets
-  
+
   # TODO: add association to appointments (through pets)
-  
+
   # TODO: add validations
 
   before_save :normalize_phone_number
@@ -11,5 +11,7 @@ class Owner < ActiveRecord::Base
   def normalize_phone_number
     # stretch
   end
+
+  has_many :pets
 
 end

@@ -20,8 +20,9 @@ ActiveRecord::Schema.define(version: 20170125213558) do
     t.string   "last_name"
     t.string   "email"
     t.string   "phone"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "password_digest"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   create_table "pets", force: :cascade do |t|
